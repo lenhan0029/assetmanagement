@@ -1,0 +1,18 @@
+rookies:
+  app:
+    jwtExpirationMs: 86400000
+    jwtSecret: rookiesSecretKey
+server:
+  port: 28083
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          auto: update
+        show_sql: true
